@@ -1,6 +1,5 @@
-
 cmake_minimum_required(VERSION 3.8)
-project(cpp_pubsub)
+project(my_package)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
@@ -8,22 +7,8 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
-find_package( rclcpp REQUIRED)
-find_package( std_msgs REQUIRED)
-# uncomment the following section in order to fill in
-# further dependencies manually.
-# find_package(<dependency> REQUIRED)
-add_executable(talker src/publisher_lambda_function.cpp)
-add_executable(listener src/subscriber_lambda_function.cpp)
-ament_target_dependencies(talker rclcpp std_msgs)
-ament_target_dependencies(listener rclcpp std_msgs)
-
-
-
-install(TARGETS 
-  talker
-  listener
-  DESTINATION lib/${PROJECT_NAME})
+find_package(rclpp REQUIRED)
+find_package(ament_index_cpp REQUIRED)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -36,5 +21,20 @@ if(BUILD_TESTING)
   set(ament_cmake_cpplint_FOUND TRUE)
   ament_lint_auto_find_test_dependencies()
 endif()
+
+
+Cmakeadd_executable(file_reader_node src/file_reader_node.cpp)
+ament_target_dependencies(file_reader_node rclcpp ament_index_cpp)
+
+install(TARGETS
+  file_reader_node
+  DESTINATION lib/proyect_1
+)
+
+# Install data folder
+install(DIRECTORY data/
+  DESTINATION share/proyect_1/data
+)
+
 
 ament_package()
