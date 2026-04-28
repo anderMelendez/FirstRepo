@@ -1,0 +1,10 @@
+/home/ander/ros2_ws/src/cpp_pubsub/build/cpp_pubsub/CMakeFiles/uninstall.dir
+/home/ander/ros2_ws/src/cpp_pubsub/build/cpp_pubsub/CMakeFiles/cpp_pubsub_uninstall.dir
+/home/ander/ros2_ws/src/cpp_pubsub/build/cpp_pubsub/CMakeFiles/talker.dir
+/home/ander/ros2_ws/src/cpp_pubsub/build/cpp_pubsub/CMakeFiles/test.dir
+/home/ander/ros2_ws/src/cpp_pubsub/build/cpp_pubsub/CMakeFiles/edit_cache.dir
+/home/ander/ros2_ws/src/cpp_pubsub/build/cpp_pubsub/CMakeFiles/rebuild_cache.dir
+/home/ander/ros2_ws/src/cpp_pubsub/build/cpp_pubsub/CMakeFiles/list_install_components.dir
+/home/ander/ros2_ws/src/cpp_pubsub/build/cpp_pubsub/CMakeFiles/install.dir
+/home/ander/ros2_ws/src/cpp_pubsub/build/cpp_pubsub/CMakeFiles/install/local.dir
+/home/ander/ros2_ws/src/cpp_pubsub/build/cpp_pubsub/CMakeFiles/install/strip.dir
